@@ -4,10 +4,6 @@ author_profile: true
 ---
 <!-- markdownlint-disable MD033 -->
 
-# About me
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at lacus sodales, varius magna luctus, feugiat ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-
 <style>
 .container-v {
   display: flex;
@@ -110,8 +106,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at lacus soda
   <div class="container-h">
     <div class="container-v left">
       <div class="job">College of Wooster</div>
-      <div class="wplace">Bachelors degree, Mathematics  (honors)</div>
-      <div class="wplace">Bachelors degree, Anthopology  (honors)</div>
+      <div class="wplace">Mathematics  (honors)</div>
+      <div class="wplace">Anthopology  (honors)</div>
     </div>
     <div class="container-v right">
       <div class="extra">Degree Student</div>
