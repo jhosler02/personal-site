@@ -1,4 +1,4 @@
-title                   : jacky4k
+title                   : Jack's Blog
 name                    : Jack Hosler
 
 # Site Author
@@ -16,20 +16,20 @@ author:
       url: "https://www.linkedin.com/in/jackhosler/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jhosler02"
+      url: "https://github.com/jdy4k"
 
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/jhosler02"
+      url: "https://github.com/jdy4k"
   since: "2025"
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jacky4k
+github_username:  jdy4k
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
