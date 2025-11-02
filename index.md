@@ -17,7 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at lacus soda
   flex-grow: 0;
 }
 .left {
-  flex: 0 0 80%;
+  flex: 0 0 70%;
 }
 .right {
 
