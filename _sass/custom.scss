@@ -1,0 +1,92 @@
+/* Custom styles for index.html - using Nord theme colors */
+/* Note: Nord theme variables are automatically loaded via minimal_mistakes_skin setting */
+
+.container-v {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.left {
+  flex: 0 0 70%;
+}
+
+.right {
+  // empty
+}
+
+.main {
+  border-left: 3px solid $base0b; // Nord green (#a3be8c)
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.complete {
+  border-left: 3px solid $border-color; // Nord border color
+}
+
+.container-h {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  line-height: 1.15em;
+}
+
+.job {
+  font-weight: bold;
+}
+
+.wplace {
+  font-size: 15px;
+}
+
+.extra {
+  font-size: 12px;
+}
+
+.present {
+  color: $base0b;
+}
+
+.sum {
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+
+details {
+  padding: 0 0 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+.fa-arrow-up-right-from-square {
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.wplace a {
+  color: $primary-color; // Nord blue (#81a1c1)
+  text-decoration: none;
+}
+
+.wplace a:visited {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.wplace a:hover {
+  color: $link-color-visited; // Nord darker blue (#5e81ac)
+  opacity: 0.7;
+}

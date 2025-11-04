@@ -1,4 +1,4 @@
-title                   : Jack's Blog
+title                   : homepage
 name                    : Jack Hosler
 
 # Site Author
@@ -6,7 +6,7 @@ author:
   name                  : "Jack Hosler"
   avatar                : /assets/images/bio-photo.jpg
   bio                   : ""
-  location              : "Huntingdon PA"
+  location              : "Huntingdon, PA"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -33,7 +33,7 @@ github_username:  jdy4k
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "nord"
 enable_darkmode: true
 plugins:
   - jekyll-feed
@@ -51,3 +51,6 @@ defaults:
     values:
       layout: single
       author_profile: false
+
+sass:
+  style: compressed
