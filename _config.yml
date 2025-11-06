@@ -10,7 +10,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "jhosler02@gmail.com"
+      url: "mailto:contact@jackhosler.com"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/jackhosler/"
@@ -21,10 +21,15 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:contact@jackhosler.com"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jackhosler/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jdy4k"
-  since: "2025"
 
 
 baseurl: "" # the subpath of your site, e.g. /blog
