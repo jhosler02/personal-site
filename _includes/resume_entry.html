@@ -1,0 +1,56 @@
+{% comment %}
+  Resume entry include
+  
+  Parameters:
+  - title: Job title or position name
+  - subtitle: Workplace or organization name
+  - subtitle_url: (optional) URL for the subtitle link (GitHub links will show GitHub icon, others show arrow icon)
+  - subtitle2: (optional) Second subtitle line (e.g., for multiple degrees)
+  - extra1: First extra info (e.g., "Part-time - Remote")
+  - extra2: Second extra info (e.g., "Aug 2025 - present")
+  - brief: Short description of the entry
+  - summary_title: (optional) Title for the summary/details section (default: "Show extended summary")
+  - summary_content: Content for the details section
+  - is_complete: (optional) If true, adds "complete" class to the container
+{% endcomment %}
+
+<div class="container-v main{% if include.is_complete %} complete{% endif %}">
+  <div class="container-h">
+    <div class="container-v left">
+      <div class="title">{{ include.title }}</div>
+      <div class="subtitle">
+        {% if include.subtitle_url %}
+          {{ include.subtitle }} 
+          {% if include.subtitle_url contains 'github.com' %}
+            <a href="{{ include.subtitle_url }}" target="_blank"><span class="fa-brands fa-git-alt"></span></a>
+          {% else %}
+            <a href="{{ include.subtitle_url }}" target="_blank"><span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+          {% endif %}
+        {% else %}
+          {{ include.subtitle }}
+        {% endif %}
+      </div>
+      {% if include.subtitle2 %}
+      <div class="subtitle">{{ include.subtitle2 }}</div>
+      {% endif %}
+    </div>
+    <div class="container-v right">
+      {% if include.extra1 %}<div class="extra">{{ include.extra1 }}</div>{% endif %}
+      {% if include.extra2 %}<div class="extra">{{ include.extra2 }}</div>{% endif %}
+    </div>
+  </div>
+  {% if include.brief %}
+  <div class="brief">
+    {{ include.brief }}
+  </div>
+  {% endif %}
+  {% if include.summary_content %}
+  <div class="sum">
+    <details>
+      <summary>{{ include.summary_title | default: "Show extended summary" }}</summary>
+      {{ include.summary_content | markdownify }}
+    </details>
+  </div>
+  {% endif %}
+</div>
+

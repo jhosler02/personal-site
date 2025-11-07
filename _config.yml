@@ -1,4 +1,4 @@
-title                   : homepage
+title                   : jack hosler
 name                    : Jack Hosler
 include: ["_pages"]
 
@@ -57,6 +57,8 @@ defaults:
     values:
       layout: single
       author_profile: false
+
+paginate: 5
 
 sass:
   style: compressed

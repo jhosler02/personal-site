@@ -1,9 +1,20 @@
 ---
 permalink: /resume/
 layout: single
-title: "Resume"
+title: ""
 author_profile: true
 ---
+
+<style>
+  a.btn.btn--primary {
+    font-size: 10px !important;
+    font-weight: bold !important;
+    padding: 4px 8px !important;
+    line-height: 1.2 !important;
+    margin-top: 7px;
+    transform-origin: left center;
+  }
+</style>
 
 <html>
   <body>
@@ -11,141 +22,132 @@ author_profile: true
       <link rel="stylesheet" href="/assets/css/main.css">
     </head>
   <body>
-    <h2>Career Experience</h2>
-
-    <div class="container-v main">
-      <div class="container-h">
-        <div class="container-v left">
-          <div class="job">Bioinformatisist</div>
-          <div class="wplace">Wright Labs <a href="https://www.wrightlabs.org/" target="_blank"><span class="fa-solid fa-arrow-up-right-from-square"></span></a></div>
-        </div>
-        <div class="container-v right">
-          <div class="extra">Part-time - Hybrid</div>
-          <div class="extra">Aug 2025 - <span class="present">present</span></div>
-        </div>
-      </div>
-      <div class="sum">
-        <details>
-          <summary>Show extended summary</summary>
-          Works focuses primarily on developing tools for reserachers (nextflow pipelines, excel functions) and performing statistical analyis.
-        </details>
-      </div>
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5em;">
+      <h1 style="margin: 0;">Resume</h1>
+      <a href="/assets/jackhosler_cv.pdf" class="btn btn--primary" target="_blank" >
+        PDF <span class="fa-solid fa-download" style="font-size: 10px;"></span>
+      </a>
     </div>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at elementum nisi. Suspendisse ex massa, 
+      gravida sit amet gravida quis, blandit a diam. Curabitur ut suscipit mi. Pellentesque dictum, augue ultricies 
+      tincidunt dictum, nunc felis iaculis augue, a finibus magna libero et mi. </p>
+    
+    <h2 style="margin-top: 0.5em;">Work Experience</h2>
 
-    <div class="container-v main">
-      <div class="container-h">
-        <div class="container-v left">
-          <div class="job">Japanese Instructor</div>
-          <div class="wplace">Appalachia Intermediate Unit 8 <a href="https://www.iu08.org/" target="_blank"><span class="fa-solid fa-arrow-up-right-from-square"></span></a></div>
-        </div>
-        <div class="container-v right">
-          <div class="extra">Part-time - Remote</div>
-          <div class="extra">Oct 2025 - <span class="present">present</span></div>
-        </div>
-      </div>
-      <div class="sum">
-        <details>
-          <summary>Show extended summary</summary>
-          Part-time work giving introductory Japanese lessons to schools with limited foreign language programs in Pennslyvania. I prepare lectures to complement the Japanese language curriculum provided by AIU8, as well as providing assitance to students and grading coursework.
-        </details>
-      </div>
-    </div>
+    {% include resume_entry.html 
+       title="Bioinformatisist"
+       subtitle="Wright Labs"
+       subtitle_url="https://www.wrightlabs.org/"
+       extra1="Part-time - Hybrid"
+       extra2='Aug 2025 - <span class="present">present</span>'
+       summary_content="\begin{jobshort}{Bioinformatisist}{Aug 2025 - present}
+       Works focuses primarily on developing tools for researchers (nextflow pipelines, 
+       excel functions) and performing statistical analysis."
+    %}
 
-    <div class="container-v main complete">
-      <div class="container-h">
-        <div class="container-v left">
-          <div class="job">Archeology Reserarch Assistant</div>
-          <div class="wplace">Juniata College <a href="https://www.juniata.edu/" target="_blank"><span class="fa-solid fa-arrow-up-right-from-square"></span></a></div>
-        </div>
-        <div class="container-v right">
-          <div class="extra">Intership - On-Site</div>
-          <div class="extra">May 2022 - Jul 2022</div>
-        </div>
-      </div>
-      <div class="sum">
-        <details>
-          <summary>Show extended summary</summary>
-          Assisted lab in cataloguing finds from the Fort Ligonier archaeological site. Work involved identifying items, bagging those items alongside a card containing relevant information and an identifying number, as well as adding this information to an excel database.
-        </details>
-      </div>
-    </div>
+    {% include resume_entry.html 
+       title="Japanese Instructor"
+       subtitle="Appalachia Intermediate Unit 8"
+       subtitle_url="https://www.iu08.org/"
+       extra1="Part-time - Remote"
+       extra2='Oct 2025 - <span class="present">present</span>'
+       summary_content="Part-time work giving introductory Japanese lessons 
+       to schools with limited foreign language programs in Pennsylvania. 
+       I prepare lectures to complement the Japanese language curriculum provided by AIU8, 
+       as well as providing assistance to students and grading coursework."
+    %}
+
+    {% include resume_entry.html 
+       title="Anthropology Reserarch Assistant"
+       subtitle="Juniata College"
+       subtitle_url="https://www.juniata.edu/"
+       extra1="Intership - On-Site"
+       extra2="May 2022 - Jul 2022"
+       summary_content="Assisted lab in cataloging finds from the Fort Ligonier 
+      site. Work involved identifying items, bagging those items 
+       alongside a card containing relevant information and an identifying number, 
+       as well as adding this information to an excel database."
+       is_complete=true
+    %}
+
+    <h2>Projects</h2>
+
+    {% include resume_entry.html 
+      title="Shotgun Metagenomics Pipeline"
+      subtitle="~"
+      subtitle_url="https://github.com/jdy4k/shotgun-mtmg-pipeline"
+      extra1="~"
+      extra2="~"
+      brief="A nextflow pipeline for shotgun metagenomics data analysis."
+      summary_content="This is summary text!"
+      is_complete=true
+   %}
 
     <h2>Education</h2>
 
-    <div class="container-v main complete">
-      <div class="container-h">
-        <div class="container-v left">
-          <div class="job">College of Wooster</div>
-          <div class="wplace">Mathematics  (honors)</div>
-          <div class="wplace">Anthopology  (honors)</div>
-        </div>
-        <div class="container-v right">
-          <div class="extra">Degree Student</div>
-          <div class="extra">Aug 2020 - May 2025</div>
-        </div>
-      </div>
-      <div class="sum">
-        <details>
-          <summary>Show extended summary</summary>
-          This is summary text!
-        </details>
-      </div>
-    </div>
+    {% include resume_entry.html 
+       title="College of Wooster"
+       subtitle="Mathematics, Anthropology (honors)"
+       extra1="Bachelors Degree Student"
+       extra2="Aug 2020 - May 2025"
+       summary_content="This is summary text!"
+       is_complete=true
+    %}
 
-    <div class="container-v main complete">
-      <div class="container-h">
-        <div class="container-v left">
-          <div class="job">Waseda Univeristy</div>
-          <div class="wplace">Study Abroad</div>
-        </div>
-        <div class="container-v right">
-          <div class="extra">Non-Degree Student</div>
-          <div class="extra">Sep 2022 - Jul 2023</div>
-        </div>
-      </div>
-      <div class="sum">
-        <details>
-          <summary> SILS/CJL Courses </summary>
-          - (SOCI) Politics of Translation<br>
-          - (ART) Select Topics in Japanese Art History<br>
-          - (CSCI) Introduction to Machine Learning<br>
-          - (JPN) Intensive Japanese 4<br>
-          - (JPN) Intensive Japanese 5<br>
-          - (JPN) Immersive Reading<br>
-          - (JPN) Public Speaking
-        </details>
-      </div>
-    </div>
+    {% include resume_entry.html 
+       title="Waseda Univeristy"
+       subtitle="Study Abroad"
+       extra1="Non-Degree Student"
+       extra2="Sep 2022 - Jul 2023"
+       summary_title="SILS/CJL Courses"
+       summary_content="
+- (SOCI) Politics of Translation
+- (ART) Select Topics in Japanese Art History
+- (CSCI) Introduction to Machine Learning
+- (JPN) Intensive Japanese 4
+- (JPN) Intensive Japanese 5
+- (JPN) Immersive Reading
+- (JPN) Public Speaking
+        "
+       is_complete=true
+    %}
 
-    <div class="container-v main complete">
-      <div class="container-h">
-        <div class="container-v left">
-          <div class="job">Juniata College</div>
-          <div class="wplace">Highschool Dual Enrollment</div>
-        </div>
-        <div class="container-v right">
-          <div class="extra">Non-Degree Student</div>
-          <div class="extra">Feb 2018 - May 2020</div>
-        </div>
-      </div>
-      <div class="sum">
-        <details>
-          <summary> Dual Enrollment Classes </summary>
-          - CN110 Chinese I<br>
-          - CN120 Chinese II<br>
-          - CN210 Chinese III<br>
-          - CN220 Chinese IV<br>
-          - CN330 Advanced Chinese<br>
-          - MA130 Calculus I<br>
-          - MA160 Linear Algebra<br>
-          - MA230 Calculus II<br>
-          - PC202 Intro to Physics I (Calculus based)<br>
-          - PC202L Intro to Physics Lab I<br>
-          - PC203 Intro to Physics II (Calculus based)<br>
-          - PC203L Intro to Physics Lab II<br>
-          - CS101 Introduction to Computer Science
-        </details>
-      </div>
-    </div>
+    {% include resume_entry.html 
+       title="Juniata College"
+       subtitle="Highschool Dual Enrollment"
+       extra1="Non-Degree Student"
+       extra2="Feb 2018 - May 2020"
+       summary_title="Dual Enrollment Classes"
+       summary_content="
+- CN110 Chinese I
+- CN120 Chinese II
+- CN210 Chinese III
+- CN220 Chinese IV
+- CN330 Advanced Chinese
+- MA130 Calculus I
+- MA160 Linear Algebra
+- MA230 Calculus II
+- PC202 Intro to Physics I (Calculus based)
+- PC202L Intro to Physics Lab I
+- PC203 Intro to Physics II (Calculus based)
+- PC203L Intro to Physics Lab II
+- CS101 Introduction to Computer Science
+        "
+       is_complete=true
+    %}
+
+    <h2>Service</h2>
+
+    {% include resume_entry.html 
+       title="Guatemala Education Delegation"
+       subtitle="Juniata College"
+       extra1="Volunteer"
+       extra2="June 2023 - July 2023"
+       summary_content="Educational delegation trip to Quetzaltenango, Guatemala 
+       where I participated in cultural exchange with/English 
+       education for local students (kindergarten through 6th grade)."
+       is_complete=true
+    %}
+
   </body>
 </html>

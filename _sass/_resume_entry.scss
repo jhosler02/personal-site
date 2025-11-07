@@ -1,0 +1,136 @@
+/* Resume entry styles - imports Nord skin variables */
+@import "minimal-mistakes/skins/nord";
+
+.container-v {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.left {
+  flex: 0 0 70%;
+}
+
+.right {
+  // empty
+}
+
+present {
+  color: $base0b;
+}
+
+.main {
+  border-left: 3px solid $base0b; // Nord green
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.complete {
+  border-left: 3px solid $border-color; // Nord border color
+}
+
+.container-h {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  line-height: 1.15em;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 15px;
+}
+
+.subtitle a {
+  color: $primary-color; // Nord blue
+  text-decoration: none;
+}
+
+.subtitle a:visited {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  color: $link-color-visited; // Nord darker blue
+  opacity: 0.7;
+}
+
+
+.extra {
+  font-size: 12px;
+  margin-bottom: 0;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.brief {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: darken($text-color, 25%);
+}
+
+.sum {
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-top: 7.5px;
+  margin-bottom: 0;
+  
+  // Ensure all markdown-generated content uses consistent styling
+  * {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+  
+  ul, ol {
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+  }
+}
+
+details {
+  padding: 0 0 0;
+  margin-bottom: 0;
+  
+  > *:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+.fa-arrow-up-right-from-square {
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+.subtitle .fa-github {
+  font-size: 12px;
+  margin-left: 5px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
