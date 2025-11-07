@@ -10,15 +10,11 @@
 }
 
 .left {
-  flex: 0 0 70%;
+  flex: 0 0 80%;
 }
 
 .right {
   // empty
-}
-
-present {
-  color: $base0b;
 }
 
 .main {
@@ -133,4 +129,3 @@ summary {
   position: relative;
   top: -2px;
 }
-
