@@ -90,3 +90,16 @@ summary {
   color: $link-color-visited; // Nord darker blue (#5e81ac)
   opacity: 0.7;
 }
+
+// Disable opacity change on hover for author profile avatar
+.sidebar {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+// Disable links on sidebar profile photo and name
+.author__avatar a,
+.author__name a {
+  pointer-events: none;
+  cursor: default;
+}

@@ -1,3 +1,7 @@
 main:
+  - title: "posts"
+    url: /posts/
+  - title: "resume"
+    url: /resume/
   - title: "repo"
     url: https://github.com/jhosler02/personal-site

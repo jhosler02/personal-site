@@ -1,5 +1,6 @@
 title                   : homepage
 name                    : Jack Hosler
+include: ["_pages"]
 
 # Site Author
 author:

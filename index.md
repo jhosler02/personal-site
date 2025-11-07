@@ -1,0 +1,7 @@
+---
+layout: home
+author_profile: true
+title: "About me"
+---
+
+Test text
