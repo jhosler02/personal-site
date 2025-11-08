@@ -11,6 +11,11 @@
   cursor: default;
 }
 
+// Hide follow button on mobile
+.author__urls-wrapper button {
+  display: none !important;
+}
+
 // Style primary buttons with dark blue from Nord theme
 a.btn.btn--primary,
 .btn.btn--primary {
