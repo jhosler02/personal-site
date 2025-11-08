@@ -13,8 +13,8 @@
 
 // Hide follow button on mobile (below large breakpoint, typically < 1024px)
 // and ensure author links are always visible on mobile
-.sidebar .author__urls-wrapper {
-  @media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
+  .sidebar .author__urls-wrapper {
     button.btn.btn--inverse {
       display: none !important;
       visibility: hidden !important;
@@ -33,10 +33,9 @@
       flex-direction: row !important;
       flex-wrap: wrap !important;
       align-items: center !important;
-      gap: 10px 15px !important;
       position: relative !important;
       margin: 0 !important;
-      margin-top: -14px !important; // Offset text up
+      margin-top: -5px !important;
       padding: 0 !important;
       border: 0 !important;
       background: transparent !important;
@@ -51,7 +50,7 @@
         display: inline-flex !important;
         align-items: center !important;
         white-space: nowrap !important;
-        margin: 0 !important;
+        margin: 0 15px 10px 0 !important;
         vertical-align: middle !important;
         line-height: 1 !important;
       }
@@ -74,7 +73,6 @@
         }
       }
       
-      // Style icons for location and other non-link items
       i {
         vertical-align: middle !important;
         line-height: 1 !important;
@@ -82,7 +80,6 @@
         align-items: center !important;
       }
       
-      // Ensure text in spans aligns properly
       span {
         vertical-align: middle !important;
         line-height: 1 !important;
