@@ -4,6 +4,63 @@
   transition: none !important;
 }
 
+// Hide author profile sidebar on mobile
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    display: none !important;
+  }
+}
+
+// Show resume mobile buttons only on mobile
+.resume-mobile-buttons {
+  display: none !important;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+  
+  @media screen and (max-width: 1023px) {
+    display: flex !important;
+    
+    a {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+// Home intro with avatar on mobile
+.home-intro-mobile {
+  @media screen and (max-width: 1023px) {
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-bottom: 1em !important;
+    
+    span {
+      flex: 1 !important;
+      margin-bottom: 0 !important;
+      margin-right: 15px !important;
+    }
+  }
+}
+
+.home-avatar-mobile {
+  display: none !important;
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+  border: 2px solid $border-color !important;
+  
+  @media screen and (max-width: 1023px) {
+    display: block !important;
+    margin-top: -10px !important;
+  }
+}
+
 // Disable links on sidebar profile photo and name
 .author__avatar a,
 .author__name a {
