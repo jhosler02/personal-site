@@ -10,16 +10,11 @@
 }
 
 .left {
-  min-width: 0; // Allow grid item to shrink below content size
-  overflow-wrap: break-word;
+  // flex: 0 0 80%;
 }
 
 .right {
-  white-space: nowrap;
-  
-  @media (max-width: 768px) {
-    white-space: normal;
-  }
+  margin-left: auto;
 }
 
 .main {
@@ -35,21 +30,10 @@
 }
 
 .container-h {
-  display: grid;
-  grid-template-columns: 500px auto;
-  gap: 20px;
+  display: flex;
+  gap: 0px;
   align-items: center;
-  line-height: 1.15em;
-  
-  @media (max-width: 900px) {
-    grid-template-columns: minmax(200px, 350px) auto;
-  }
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
+  line-height: 1.15em;}
 
 .title {
   font-weight: bold;
