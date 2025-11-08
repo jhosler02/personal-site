@@ -5,14 +5,16 @@
 }
 
 // Hide author profile sidebar below $large breakpoint (same threshold where sidebar floats)
-@include breakpoint(max-width $large) {
+// Using direct media query for GitHub Pages compatibility (1024px = 64em)
+@media screen and (max-width: 1023px) {
   .sidebar {
     display: none !important;
   }
 }
 
 // Hide LinkedIn, GitHub, and Email buttons above $large breakpoint
-@include breakpoint($large) {
+// Using direct media query for GitHub Pages compatibility (1024px = 64em)
+@media screen and (min-width: 1024px) {
   // Hide buttons by targeting their specific hrefs
   a.btn.btn--primary[href*="linkedin.com"],
   a.btn.btn--primary[href*="github.com"],
@@ -72,7 +74,7 @@ a.btn.btn--primary,
 
 // Increase font size of git-alt icon in top bar and offset down
 .masthead .fa-git-alt {
-  font-size: calc(1em + 3px) !important;
+  font-size: 1.1875em !important; // Equivalent to 1em + 3px at 16px base
   position: relative;
   top: 2px;
 }
