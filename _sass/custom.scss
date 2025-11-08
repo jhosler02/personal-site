@@ -5,17 +5,16 @@
 }
 
 // Hide author profile sidebar below large breakpoint (1024px) - same threshold where sidebar floats
-// Using direct media query for GitHub Pages compatibility (works with older Sass compilers)
-@media screen and (max-width: 63.9375em) {
+// Using pixel-based media query for maximum GitHub Pages compatibility
+@media (max-width: 1023px) {
   .sidebar {
     display: none !important;
   }
 }
 
 // Hide LinkedIn, GitHub, and Email buttons above large breakpoint (1024px)
-// Using direct media query for GitHub Pages compatibility (works with older Sass compilers)
-// 64em = 1024px at default 16px font size
-@media screen and (min-width: 64em) {
+// Using pixel-based media query for maximum GitHub Pages compatibility
+@media (min-width: 1024px) {
   // Hide buttons by targeting their specific hrefs
   a.btn.btn--primary[href*="linkedin.com"],
   a.btn.btn--primary[href*="github.com"],
