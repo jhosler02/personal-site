@@ -4,15 +4,15 @@
   transition: none !important;
 }
 
-// Hide author profile sidebar on mobile (below 1024px)
-@media screen and (max-width: 1023px) {
+// Hide author profile sidebar below $large breakpoint (same threshold where sidebar floats)
+@include breakpoint(max-width $large) {
   .sidebar {
     display: none !important;
   }
 }
 
-// Hide LinkedIn, GitHub, and Email buttons on desktop (above 1024px)
-@media screen and (min-width: 1024px) {
+// Hide LinkedIn, GitHub, and Email buttons above $large breakpoint
+@include breakpoint($large) {
   // Hide buttons by targeting their specific hrefs
   a.btn.btn--primary[href*="linkedin.com"],
   a.btn.btn--primary[href*="github.com"],
