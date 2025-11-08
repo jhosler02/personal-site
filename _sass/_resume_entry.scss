@@ -10,11 +10,16 @@
 }
 
 .left {
-  flex: 0 0 80%;
+  flex: 0 0 60%;
+  min-width: 400px;
+  max-width: 600px;
 }
 
 .right {
-  // empty
+  flex: 0 0 auto;
+  text-align: right;
+  white-space: nowrap;
+  min-width: 200px;
 }
 
 .main {
@@ -31,8 +36,8 @@
 
 .container-h {
   display: flex;
-  gap: 0px;
-  align-items: center;
+  gap: 20px;
+  align-items: flex-start;
   line-height: 1.15em;
 }
 
