@@ -1,13 +1,46 @@
-// Disable opacity change on hover for author profile avatar
-.sidebar {
-  opacity: 1 !important;
-  transition: none !important;
+// Disable opacity change on hover for author profile avatar (desktop only)
+@media screen and (min-width: 1025px) {
+  .sidebar {
+    opacity: 1 !important;
+    transition: none !important;
+  }
 }
 
-// Hide author profile sidebar on mobile
-@media screen and (max-width: 1023px) {
-  .sidebar {
+// Hide author profile sidebar on mobile - comprehensive approach
+@media screen and (max-width: 1024px) {
+  body .sidebar,
+  body #main .sidebar,
+  body #main > .sidebar,
+  body .initial-content #main .sidebar,
+  body .initial-content #main > .sidebar,
+  body .page__inner-wrap .sidebar,
+  body .layout--home #main .sidebar,
+  body .layout--single #main .sidebar,
+  body .layout--home .sidebar,
+  body .layout--single .sidebar {
     display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    min-height: 0 !important;
+    min-width: 0 !important;
+    max-height: 0 !important;
+    max-width: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    clip: rect(0, 0, 0, 0) !important;
+  }
+  
+  // Hide all sidebar children
+  body .sidebar *,
+  body #main .sidebar * {
+    display: none !important;
+    visibility: hidden !important;
   }
 }
 
@@ -28,36 +61,6 @@
         margin-right: 5px;
       }
     }
-  }
-}
-
-// Home intro with avatar on mobile
-.home-intro-mobile {
-  @media screen and (max-width: 1023px) {
-    display: flex !important;
-    align-items: flex-start !important;
-    margin-bottom: 1em !important;
-    
-    span {
-      flex: 1 !important;
-      margin-bottom: 0 !important;
-      margin-right: 15px !important;
-    }
-  }
-}
-
-.home-avatar-mobile {
-  display: none !important;
-  width: 100px !important;
-  height: 100px !important;
-  border-radius: 50% !important;
-  object-fit: cover !important;
-  flex-shrink: 0 !important;
-  border: 2px solid $border-color !important;
-  
-  @media screen and (max-width: 1023px) {
-    display: block !important;
-    margin-top: -10px !important;
   }
 }
 
