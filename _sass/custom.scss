@@ -4,16 +4,14 @@
   transition: none !important;
 }
 
-// Hide author profile sidebar below $large breakpoint (same threshold where sidebar floats)
-// Using direct media query for GitHub Pages compatibility (1024px = 64em)
+// Hide author profile sidebar on mobile (below 1024px)
 @media screen and (max-width: 1023px) {
   .sidebar {
     display: none !important;
   }
 }
 
-// Hide LinkedIn, GitHub, and Email buttons above $large breakpoint
-// Using direct media query for GitHub Pages compatibility (1024px = 64em)
+// Hide LinkedIn, GitHub, and Email buttons on desktop (above 1024px)
 @media screen and (min-width: 1024px) {
   // Hide buttons by targeting their specific hrefs
   a.btn.btn--primary[href*="linkedin.com"],

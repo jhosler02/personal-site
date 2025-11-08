@@ -1,9 +1,0 @@
-// Custom variables for Minimal Mistakes theme
-// This ensures variables are available on GitHub Pages
-// Imported AFTER theme variables to override if needed
-
-// Define $large as a unitless number (1024) which the breakpoint library will convert to ems
-// This avoids unit mixing issues on GitHub Pages' Sass compiler
-// The breakpoint library (with "to ems" enabled) will convert this to the appropriate em value
-$large: 1024 !default;
-
