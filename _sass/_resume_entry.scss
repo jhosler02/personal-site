@@ -10,27 +10,25 @@
 }
 
 .left {
-  flex: 1 1 60%;
-  min-width: 0;
-  
-  @media (max-width: 768px) {
-    flex: 0 0 100%;
-    width: 100%;
-  }
+  order: 2;
+  flex: 1 1 auto;
+  min-width: 0; // Prevents flex items from overflowing
 }
 
 .right {
-  flex: 0 0 35%;
-  text-align: right;
+  order: 1;
+  flex: 0 0 auto;
+  text-align: left;
   white-space: nowrap;
-  min-width: 0;
-  padding-left: 2%;
+  max-width: calc(50% - 8px); // Prevent it from taking too much space and pushing content offscreen
   
-  @media (max-width: 768px) {
-    flex: 0 0 100%;
+  @media (max-width: 600px) {
+    order: 1;
+    width: 100%;
+    max-width: 100%;
     text-align: left;
-    margin-top: 0.5em;
-    padding-left: 0;
+    margin-bottom: 5px;
+    white-space: normal; // Allow wrapping on mobile
   }
 }
 
@@ -48,15 +46,10 @@
 
 .container-h {
   display: flex;
-  gap: 3%;
-  align-items: flex-start;
+  gap: 15px;
+  align-items: center;
   line-height: 1.15em;
   flex-wrap: wrap;
-  
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 0;
-  }
 }
 
 .title {
