@@ -10,25 +10,15 @@
 }
 
 .left {
-  order: 2;
-  flex: 1 1 auto;
-  min-width: 0; // Prevents flex items from overflowing
+  min-width: 0; // Allow grid item to shrink below content size
+  overflow-wrap: break-word;
 }
 
 .right {
-  order: 1;
-  flex: 0 0 auto;
-  text-align: left;
   white-space: nowrap;
-  max-width: calc(50% - 8px); // Prevent it from taking too much space and pushing content offscreen
   
-  @media (max-width: 600px) {
-    order: 1;
-    width: 100%;
-    max-width: 100%;
-    text-align: left;
-    margin-bottom: 5px;
-    white-space: normal; // Allow wrapping on mobile
+  @media (max-width: 768px) {
+    white-space: normal;
   }
 }
 
@@ -45,11 +35,20 @@
 }
 
 .container-h {
-  display: flex;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: 450px auto;
+  gap: 20px;
   align-items: center;
   line-height: 1.15em;
-  flex-wrap: wrap;
+  
+  @media (max-width: 900px) {
+    grid-template-columns: minmax(200px, 350px) auto;
+  }
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 .title {
