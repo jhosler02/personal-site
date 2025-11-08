@@ -42,6 +42,7 @@
 
 .subtitle {
   font-size: 15px;
+  color: darken($text-color, 10%);
 }
 
 .subtitle a {
@@ -62,6 +63,7 @@
 
 .extra {
   font-size: 12px;
+  color: darken($text-color, 10%);
   margin-bottom: 0;
   line-height: 1.5;
   margin-top: 0;
@@ -74,11 +76,22 @@
   color: darken($text-color, 25%);
 }
 
+.skills {
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 5px;
+  color: darken($text-color, 25%);
+  font-weight: 500;
+  font-style: italic;
+}
+
 .sum {
   font-size: 12px;
   line-height: 1.5em;
   margin-top: 7.5px;
   margin-bottom: 0;
+  color: darken($text-color, 10%);
   
   // Ensure all markdown-generated content uses consistent styling
   * {

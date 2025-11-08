@@ -25,3 +25,59 @@ a.btn.btn--primary,
     color: $text-color !important;
   }
 }
+
+// Reduce top and bottom margin for masthead
+.masthead {
+  margin-top: 0.25em !important;
+  margin-bottom: 0.5em !important;
+  
+  &__inner-wrap {
+    padding-top: 0.25em !important;
+    padding-bottom: 0.5em !important;
+  }
+}
+
+// Replace site title text with "home"
+.site-title {
+  font-size: 0 !important;
+  
+  &::before {
+    content: "Home";
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+
+// Increase font size of git-alt icon in top bar and offset down
+.masthead .fa-git-alt {
+  font-size: calc(1em + 3px) !important;
+  position: relative;
+  top: 2px;
+}
+
+// Change code block colors
+pre,
+code {
+  background-color: $lighter-background-color !important;
+  color: $text-color !important;
+  border-color: $border-color !important;
+}
+
+// Syntax highlighting colors
+.highlight {
+  background-color: $lighter-background-color !important;
+  
+  pre {
+    background-color: $lighter-background-color !important;
+    color: $text-color !important;
+  }
+  
+  // Override syntax highlighting token colors if needed
+  .c, .cm, .cp, .c1, .cs { color: $base04 !important; } // Comments
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: $base0e !important; } // Keywords
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx { color: $base0b !important; } // Strings
+  .n, .na, .nb, .nc, .nd, .ne, .nf, .ni, .nn, .no, .nv { color: $text-color !important; } // Names
+  .o { color: $base0d !important; } // Operators
+  .p { color: $text-color !important; } // Punctuation
+  .m, .mf, .mh, .mi, .il, .mo { color: $base09 !important; } // Numbers
+}

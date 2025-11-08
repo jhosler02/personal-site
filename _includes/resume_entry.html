@@ -8,7 +8,9 @@
   - subtitle2: (optional) Second subtitle line (e.g., for multiple degrees)
   - extra1: First extra info (e.g., "Part-time - Remote")
   - extra2: Second extra info (e.g., "Aug 2025 - present")
+  - repo: (optional) Repository URL - if provided, displays a button with the repo path in the right column
   - brief: Short description of the entry
+  - skills: (optional) Skills or technologies used (e.g., "R • Nextflow • Bioinformatics • Statistics")
   - summary_title: (optional) Title for the summary/details section (default: "Show extended summary")
   - summary_content: Content for the details section
   - is_complete: (optional) If true, adds "complete" class to the container
@@ -37,11 +39,22 @@
     <div class="container-v right">
       {% if include.extra1 %}<div class="extra">{{ include.extra1 }}</div>{% endif %}
       {% if include.extra2 %}<div class="extra">{{ include.extra2 }}</div>{% endif %}
+      {% if include.repo %}
+        {% assign repo_path = include.repo | split: '.com/' | last %}
+        <a href="{{ include.repo }}" target="_blank" class="resume-repo-btn">
+          {{ repo_path }}
+        </a>
+      {% endif %}
     </div>
   </div>
   {% if include.brief %}
   <div class="brief">
     {{ include.brief }}
+  </div>
+  {% endif %}
+  {% if include.skills %}
+  <div class="skills">
+    {{ include.skills }}
   </div>
   {% endif %}
   {% if include.summary_content %}
