@@ -1,0 +1,8 @@
+// Custom variables to override Minimal Mistakes theme defaults
+// This ensures variables are available on GitHub Pages
+// Imported AFTER theme variables to override theme defaults
+
+// Breakpoint variables (typically 64em = 1024px at default font size)
+// Defined without !default to force override of theme value
+$large: 64em;
+

@@ -9,6 +9,9 @@
 /* Variables */
 @import "minimal-mistakes/variables";
 
+/* Custom Variables - override theme defaults after theme variables are loaded */
+@import "variables-custom";
+
 /* Mixins and functions */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
