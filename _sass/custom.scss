@@ -1,66 +1,23 @@
-// Disable opacity change on hover for author profile avatar (desktop only)
-@media screen and (min-width: 1025px) {
+// Disable opacity change on hover for author profile avatar
+.sidebar {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+// Hide author profile sidebar below $large breakpoint (same threshold where sidebar floats)
+@include breakpoint(max-width $large) {
   .sidebar {
-    opacity: 1 !important;
-    transition: none !important;
+    display: none !important;
   }
 }
 
-// Hide author profile sidebar on mobile - comprehensive approach
-@media screen and (max-width: 1024px) {
-  body .sidebar,
-  body #main .sidebar,
-  body #main > .sidebar,
-  body .initial-content #main .sidebar,
-  body .initial-content #main > .sidebar,
-  body .page__inner-wrap .sidebar,
-  body .layout--home #main .sidebar,
-  body .layout--single #main .sidebar,
-  body .layout--home .sidebar,
-  body .layout--single .sidebar {
+// Hide LinkedIn, GitHub, and Email buttons above $large breakpoint
+@include breakpoint($large) {
+  // Hide buttons by targeting their specific hrefs
+  a.btn.btn--primary[href*="linkedin.com"],
+  a.btn.btn--primary[href*="github.com"],
+  a.btn.btn--primary[href*="mailto:contact@jackhosler.com"] {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    height: 0 !important;
-    width: 0 !important;
-    min-height: 0 !important;
-    min-width: 0 !important;
-    max-height: 0 !important;
-    max-width: 0 !important;
-    overflow: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
-    clip: rect(0, 0, 0, 0) !important;
-  }
-  
-  // Hide all sidebar children
-  body .sidebar *,
-  body #main .sidebar * {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-
-// Show resume mobile buttons only on mobile
-.resume-mobile-buttons {
-  display: none !important;
-  margin-bottom: 1em;
-  flex-wrap: wrap;
-  
-  @media screen and (max-width: 1023px) {
-    display: flex !important;
-    
-    a {
-      margin-right: 10px;
-      margin-bottom: 10px;
-      
-      i {
-        margin-right: 5px;
-      }
-    }
   }
 }
 
@@ -83,6 +40,11 @@ a.btn.btn--primary,
     background-color: darken($link-color-visited, 10%) !important;
     border-color: darken($link-color-visited, 10%) !important;
     color: $text-color !important;
+  }
+  
+  // Style icons in buttons
+  i {
+    margin-right: 5px;
   }
 }
 
