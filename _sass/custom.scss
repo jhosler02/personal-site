@@ -33,15 +33,15 @@
 // Style primary buttons with dark blue from Nord theme
 a.btn.btn--primary,
 .btn.btn--primary {
-  background-color: $link-color-visited !important; // Nord darker blue (#5e81ac)
-  border-color: $link-color-visited !important;
-  color: $text-color !important;
+  background-color: $link-color !important; // Nord blue (#5e81ac)
+  border-color: $link-color !important;
+  color: #eceff4 !important; // Light text on dark button
   
   &:hover,
   &:focus {
-    background-color: darken($link-color-visited, 10%) !important;
-    border-color: darken($link-color-visited, 10%) !important;
-    color: $text-color !important;
+    background-color: darken($link-color, 10%) !important;
+    border-color: darken($link-color, 10%) !important;
+    color: #eceff4 !important;
   }
   
   // Style icons in buttons
@@ -52,52 +52,52 @@ a.btn.btn--primary,
 
 // Reduce top and bottom margin for masthead
 .masthead {
-  margin-top: 0.25em !important;
-  margin-bottom: 0.5em !important;
+  margin-top: 0.2em !important;
+  margin-bottom: 0.45em !important;
   
   &__inner-wrap {
-    padding-top: 0.25em !important;
-    padding-bottom: 0.5em !important;
+    padding-top: 0.2em !important;
+    padding-bottom: 0.45em !important;
   }
 }
 
 // Replace site title text with "home"
-.site-title {
-  font-size: 0 !important;
-  
-  &::before {
-    content: "Home";
-    font-size: 1rem;
-    display: inline-block;
-  }
-}
+// .site-title {
+//   font-size: 0 !important;
+//   
+//   &::before {
+//     content: "Home";
+//     font-size: 1rem;
+//     display: inline-block;
+//   }
+// }
 
 // Increase font size of git-alt icon in top bar and offset down
 .masthead .fa-git-alt {
-  font-size: 1.1875em !important; // Equivalent to 1em + 3px at 16px base
+  font-size: 1.35em !important; // Equivalent to 1em + 3px at 16px base
   position: relative;
-  top: 2px;
+  top: 0px;
 }
 
 // Change code block colors
 pre,
 code {
-  background-color: $lighter-background-color !important;
+  background-color: $lightest-background-color !important;
   color: $text-color !important;
   border-color: $border-color !important;
 }
 
 // Syntax highlighting colors
 .highlight {
-  background-color: $lighter-background-color !important;
+  background-color: $lightest-background-color !important;
   
   pre {
-    background-color: $lighter-background-color !important;
+    background-color: $lightest-background-color !important;
     color: $text-color !important;
   }
   
   // Override syntax highlighting token colors if needed
-  .c, .cm, .cp, .c1, .cs { color: $base04 !important; } // Comments
+  .c, .cm, .cp, .c1, .cs { color: $base03 !important; } // Comments
   .k, .kc, .kd, .kn, .kp, .kr, .kt { color: $base0e !important; } // Keywords
   .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx { color: $base0b !important; } // Strings
   .n, .na, .nb, .nc, .nd, .ne, .nf, .ni, .nn, .no, .nv { color: $text-color !important; } // Names

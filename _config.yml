@@ -40,7 +40,7 @@ github_username:  jdy4k
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "nord"
-enable_darkmode: true
+enable_darkmode: false
 plugins:
   - jekyll-feed
   - jekyll-include-cache

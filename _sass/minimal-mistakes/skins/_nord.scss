@@ -1,26 +1,26 @@
 /* ==========================================================================
-   Nord skin
+   Nord Light skin
    ========================================================================== */
 
 /* Colors
    ========================================================================== */
 
-/* Polar Night (dark backgrounds) */
-$background-color: #2e3440 !default;
-$lighter-background-color: #3b4252 !default;
-$lightest-background-color: #434c5e !default;
-$border-color: #4c566a !default;
+/* Snow Storm (light backgrounds) */
+$background-color: #eceff4 !default;
+$lighter-background-color: #e5e9f0 !default;
+$lightest-background-color: #d8dee9 !default;
+$border-color: #d8dee9 !default;
 
-/* Snow Storm (light text) */
-$text-color: #e5e9f0 !default;
-$muted-text-color: #d8dee9 !default;
+/* Polar Night (dark text) */
+$text-color: #3b4252 !default;
+$muted-text-color: #4c566a !default;
 $border-color-light: #eceff4 !default;
 
 /* Frost (blue accents) */
-$primary-color: #81a1c1 !default;
-$link-color: #88c0d0 !default;
-$link-color-hover: #8fbcbb !default;
-$link-color-visited: #5e81ac !default;
+$primary-color: #5e81ac !default;
+$link-color: #5e81ac !default;
+$link-color-hover: #81a1c1 !default;
+$link-color-visited: #88c0d0 !default;
 
 /* Aurora (accent colors) */
 $warning-color: #ebcb8b !default;
@@ -30,32 +30,31 @@ $info-color: #b48ead !default;
 
 /* Base colors */
 $gray: #4c566a !default;
-$border-color: #4c566a !default;
-$form-background-color: #3b4252 !default;
-$footer-background-color: #242933 !default;
+$form-background-color: #e5e9f0 !default;
+$footer-background-color: #d8dee9 !default;
 
 /* Masthead (top bar) colors */
-$masthead-link-color: #eceff4 !default;
-$masthead-link-color-hover: #d8dee9 !default;
-$site-title-color: #eceff4 !default;
+$masthead-link-color: #3b4252 !default;
+$masthead-link-color-hover: #4c566a !default;
+$site-title-color: #3b4252 !default;
 
-/* Syntax highlighting (Nord-compatible) */
-$base00: #2e3440 !default;
-$base01: #3b4252 !default;
-$base02: #434c5e !default;
+/* Syntax highlighting (Nord Light-compatible) */
+$base00: #eceff4 !default;
+$base01: #e5e9f0 !default;
+$base02: #d8dee9 !default;
 $base03: #4c566a !default;
-$base04: #d8dee9 !default;
-$base05: #e5e9f0 !default;
-$base06: #eceff4 !default;
-$base07: #8fbcbb !default;
+$base04: #4c566a !default;
+$base05: #434c5e !default;
+$base06: #3b4252 !default;
+$base07: #2e3440 !default;
 $base08: #bf616a !default;
 $base09: #d08770 !default;
 $base0a: #ebcb8b !default;
 $base0b: #a3be8c !default;
 $base0c: #88c0d0 !default;
-$base0d: #81a1c1 !default;
+$base0d: #5e81ac !default;
 $base0e: #b48ead !default;
-$base0f: #5e81ac !default;
+$base0f: #81a1c1 !default;
 
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,

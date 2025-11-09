@@ -94,7 +94,7 @@
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 0;
-  color: darken($text-color, 25%);
+  color: lighten($text-color, 25%);
 }
 
 .skills {
@@ -102,7 +102,7 @@
   margin-top: 5px;
   margin-bottom: 0;
   margin-left: 5px;
-  color: darken($text-color, 25%);
+  color: lighten($text-color, 25%);
   font-weight: 500;
   font-style: italic;
 }
@@ -112,7 +112,7 @@
   line-height: 1.5em;
   margin-top: 7.5px;
   margin-bottom: 0;
-  color: darken($text-color, 10%);
+  color: lighten($text-color, 10%);
   
   // Ensure all markdown-generated content uses consistent styling
   * {
